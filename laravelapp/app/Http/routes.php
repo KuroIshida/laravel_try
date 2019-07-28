@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return "Hello World";
+    return view('home');
 });
 
 Route::get('about',function(){
@@ -31,5 +31,5 @@ Route::get('siswa', function(){//we name the route as siswa
   $siswa = ['A', 'B', 'C']; //we define arrray $siswa
   return view('about',compact('siswa')); //we pass the value of array siswa to view->about (btw the views are on resource file)
   //return view('about')->with('siswa', $siswa);//another way of passing data to views
-  return view('about', ['siswa'=>$siswa]);//here we directly pass them right away
+  //return view('about', ['siswa'=>$siswa]);//here we directly pass them right away
 });

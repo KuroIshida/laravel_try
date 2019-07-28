@@ -1,4 +1,6 @@
-this is view file
+@extends('template')
+
+@section('main')
 <div id="siswa">
   <h1>Data</h1>
   <?php if (!empty($siswa)): ?>
@@ -11,3 +13,8 @@ this is view file
       <h3>No data</h3>
     <?php endif ?>
 </div>
+@stop
+
+@section('footer')
+<p>&copy; 2016 Laravel</p>
+@stop
