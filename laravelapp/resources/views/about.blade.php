@@ -1,6 +1,8 @@
 @extends('template')
 
 @section('main')
+<div class="container">
+
 <div id="siswa">
   <h1>Data</h1>
   <?php if (!empty($siswa)): ?>
@@ -17,4 +19,5 @@
 
 @section('footer')
 <p>&copy; 2016 Laravel</p>
+</div>
 @stop
