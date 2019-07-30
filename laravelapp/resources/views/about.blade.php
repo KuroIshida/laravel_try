@@ -1,23 +1,22 @@
 @extends('template')
 
 @section('main')
-<div class="container">
-
-<div id="siswa">
+<div id='siswa'>
   <h1>Data</h1>
-  <?php if (!empty($siswa)): ?>
+   @if (!empty($siswa))
     <ul>
-      <?php foreach ($siswa as $val): ?>
-        <li><?php echo $val; ?></li>
-      <?php endforeach; ?>
+      @foreach ($siswa as $val)
+        <li>{{$val}}</li>
+      @endforeach
     </ul>
-    <?php else: ?>
+    @else
       <h3>No data</h3>
-    <?php endif ?>
+    @endif
 </div>
 @stop
 
 @section('footer')
-<p>&copy; 2016 Laravel</p>
+<div id='footer'>
+  <p>&copy; 2016 Laravel</p>
 </div>
 @stop
